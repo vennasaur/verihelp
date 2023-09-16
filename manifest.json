@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Veri-help",
+    "version": "1.0",
+    "description": "veri-help extension",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArWagXuqM++tOdzJfzOH95CrFxCBjcIl8uGu2FR7vxS2KwrF61+6YyHfESXhICU42r66mo+NfRk+jb/Covlp0+s3yRv/eAYAru80eT6Hl6FZuvGLvBZwEBYzPvn3YNmNMwNRQnYC09TwlvXN10ql1Wym25UXWeHbN2db7Qin2uocFXqc8qRs2kzErZALBnNYbAOeRqiVM4l+f8Hj0mqhPodBcv8Kuz73gm5z/b1bM2Gz2nxTRDRFDZC21auWGeX6uDrmeTTt727SCLte/oP6EPxELDROXmi8MxIQsnMCk1gZnIFx8FjeolrKynRPggByRJ0hJqfMdyWyG/YLCXdOdVwIDAQAB",
+    "oauth2": {
+        "client_id": "1056100572774-q954phdo78ji7cs9l0g1bcccb1jft1t3.apps.googleusercontent.com",
+        "scopes":["https://www.googleapis.com/auth/gmail.readonly","https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"]
+      },
+    
+    "permissions": ["notifications", "identity"],
+    "host_permissions": [
+        "https://people.googleapis.com/v1?resourceName=people/me"
+      ],
+    "icons": {
+        "128": "icon128.png"
+    },
+
+    "action": {
+        "default_title": "FriendBlock, friends face's in a block."
+      },
+
+      "background": {
+        "service_worker": "oauth2.js"
+      }
+    
+}
